@@ -2,6 +2,10 @@
 \usepackage{fontawesome}
 \usepackage{multicol}
 \usepackage{geometry}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{graphicx}
+
 \geometry{left=2.0cm, top=1.5cm, right=2.0cm, bottom=2.0cm, footskip=.5cm}
 \pagenumbering{gobble}
 
@@ -9,8 +13,20 @@
 
 \cvsection{info}{Personal Information}
 
+\begin{minipage}{0.3\linewidth}
+    \includegraphics[width=\linewidth]{21895037_1739275989446742_1680396907_o}
+    \label{fig:joaoprsfragoso}
+\end{minipage}\hfil
+\begin{minipage}{0.55\linewidth}
+\begin{itemize}
+	\item blabala
+	\item blabla2
+\end{itemize}
+\end{minipage}
 
 \cvsection{user}{About Me}
+
+dsasdasddsadadassdadadsa
 
 \aboutme
 {
@@ -27,7 +43,7 @@
 
 \cvsection{graduation-cap}{Education}
 
-dasdsadssdsda
+\lipsum[2]
 
 \cvsection{code}{Skills}
 
@@ -64,8 +80,10 @@ dasdsadssdsda
 	\faCircle\faCircle\faCircle\faCircle\faCircle
 \end{multicols}
 
+\newpage
+
 \cvsection{list-ul}{Projects}
 
-dadsdas
+\lipsum[5]
 
 \end{document}
