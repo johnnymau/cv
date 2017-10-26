@@ -5,39 +5,42 @@
 \usepackage{wrapfig}
 \usepackage{lipsum}
 \usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage[skins]{tcolorbox}
 
-\geometry{left=2.0cm, top=1.5cm, right=2.0cm, bottom=2.0cm, footskip=.5cm}
+\geometry{left=2.0cm, top=2cm, right=2.0cm, bottom=2.0cm}
 \pagenumbering{gobble}
 
 \begin{document}
 
 \cvsection{info}{Personal Information}
 
-\begin{minipage}{0.3\linewidth}
-    \includegraphics[width=\linewidth]{21895037_1739275989446742_1680396907_o}
-    \label{fig:joaoprsfragoso}
+\begin{minipage}{0.35\linewidth}
+	\photo{1.5cm}
 \end{minipage}\hfil
 \begin{minipage}{0.55\linewidth}
-\begin{itemize}
-	\item \faUser \space João Pedro Ribeiro e Sousa de Fragoso
-	\item \faHome \space Lumiar, Lisbon, Portugal
-	\item \faFlag \space Lumiar, Lisbon, Portugal
-	\item \faLocationArrow \space Lumiar, Lisbon, Portugal
-	\item \faMapMarker \space Lumiar, Lisbon, Portugal
-	\item \faMobile \space +351 \space 924429083
-	\item \faEnvelopeO \space joaoprsfragoso@gmail.com
-	\item \faEnvelope \space joaoprsfragoso@gmail.com
-	\item \faEnvelopeSquare \space joaoprsfragoso@gmail.com
-	\item \faGoogle \space joaoprsfragoso@gmail.com
-	\item \faInbox \space joaoprsfragoso@gmail.com
-	\item \faLinkedinSquare \space joaoprsfragoso
-	\item \faSkype \space joaoprsfragoso
-\end{itemize}
+	\begin{minipage}{0.1\linewidth}
+		\begin{center}
+			\faUser \newline
+			\faMapMarker \newline
+			\faMobile \newline
+			\faEnvelopeO \newline
+			\faLinkedinSquare \newline
+			\faSkype \newline
+		\end{center}
+	\end{minipage}\hfil
+	\begin{minipage}{0.9\linewidth}
+		João Pedro Ribeiro e Sousa de Fragoso \newline
+		\href{https://www.google.com/maps/place/Lumiar,+Lisbon,+Portugal}{Lumiar, Lisbon, Portugal} \newline
+		\href{callto://+351924429083}{+351 \space 924429083} \newline
+		\href{mailto://joaoprsfragoso@gmail.com}{joaoprsfragoso@gmail.com} \newline
+		\href{https://www.linkedin.com/in/joaoprsfragoso/}{joaoprsfragoso} \newline
+		\href{skype://joaoprsfragoso}{joaoprsfragoso} \newline
+	\end{minipage}
 \end{minipage}
 
 \cvsection{user}{About Me}
-
-dsasdasddsadadassdadadsa
 
 \aboutme
 {
