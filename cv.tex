@@ -1,20 +1,20 @@
-\documentclass[11pt, a4paper]{cv}
+\documentclass[12pt, a4paper]{cv}
 \usepackage{fontawesome}
-\usepackage{multicol}
 \usepackage{geometry}
 \usepackage{wrapfig}
 \usepackage{lipsum}
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{tikz}
+\usepackage[english]{babel}
 \usepackage[skins]{tcolorbox}
 
-\geometry{left=2.0cm, top=2cm, right=2.0cm, bottom=2.0cm}
+\geometry{left=1.5cm, top=1.5cm, right=1.5cm, bottom=1.5cm}
 \pagenumbering{gobble}
 
 \begin{document}
 
-\cvsection{info}{Personal Information}
+\cvsection{}{\hspace{35mm}João Fragoso - Electrical Engineer}
 
 \begin{minipage}{0.35\linewidth}
 	\photo{1.5cm}
@@ -22,82 +22,136 @@
 \begin{minipage}{0.55\linewidth}
 	\begin{minipage}{0.1\linewidth}
 		\begin{center}
-			\faUser \newline
-			\faMapMarker \newline
-			\faMobile \newline
-			\faEnvelopeO \newline
-			\faLinkedinSquare \newline
-			\faSkype \newline
+			\user
+			\location
+			\mobile
+			\mail
+			\linkedin
+			\skype
 		\end{center}
 	\end{minipage}\hfil
 	\begin{minipage}{0.9\linewidth}
 		João Pedro Ribeiro e Sousa de Fragoso \newline
 		\href{https://www.google.com/maps/place/Lumiar,+Lisbon,+Portugal}{Lumiar, Lisbon, Portugal} \newline
-		\href{callto://+351924429083}{+351 \space 924429083} \newline
-		\href{mailto://joaoprsfragoso@gmail.com}{joaoprsfragoso@gmail.com} \newline
+		\href{callto:+351924429083}{(+351) \space 924429083} \newline
+		\href{mailto:joaoprsfragoso@gmail.com}{joaoprsfragoso@gmail.com} \newline
 		\href{https://www.linkedin.com/in/joaoprsfragoso/}{joaoprsfragoso} \newline
-		\href{skype://joaoprsfragoso}{joaoprsfragoso} \newline
+		\href{skype://joaoprsfragoso}{joaoprsfragoso}
 	\end{minipage}
 \end{minipage}
-
-\cvsection{user}{About Me}
-
+\vfill
+\cvsection{child}{About Me}%child info male meho smileo user usersecrete
 \aboutme
 {
-
-	\faQuoteLeft \space Master finalist in Electrical Engineering, with a wide technological background in Embedded Systems and Telecommunications. I am currently looking for new challenges in my professional field and I believe I can be a great addition to your team.
+	Master finalist in Electrical Engineering, with a wide technological background in Embedded Systems and Telecommunications. I am currently looking for new challenges in my professional field and I believe I can be a great addition to your team.
 
 	I consider myself to be a highly motivated professional with good problem solving skills and objective-oriented. I face any task to me entrusted in a serious and rigorous way.
 
 	I am passionate about programming and Linux in general. Solid programming skills in C, C\#, Java, and eager to further improve my skills in C++ , Javascript, SQL, and Python. 
 
-	In my spare time, I like to learn other tools and programming languages. I'm currently diving into the containers / docker world. \faQuoteRight
-
+	In my spare time, I like to learn other tools and programming languages. I'm currently diving into the containers / docker world.
 }
-
+\vspace{4mm}
 \cvsection{graduation-cap}{Education}
 
-\lipsum[2]
-%\faTerminal code tasks
-\cvsection{terminal}{Skills}
+\begin{minipage}{0.8\linewidth}
+	\boldText{Master's degree in Electrical and Computer Engineering} \newline
+	\normalText{\itshape{Faculty of Sciences and Technology, Nova University of Lisbon}}
+\end{minipage}\hfil
+\begin{minipage}{0.2\linewidth}
+	\begin{flushright}
+	\dateText{9/2015 - Present}
+	\dateTextt{\itshape{Lisbon, Portugal}}
+	\end{flushright}
+\end{minipage}
 
-\begin{multicols}{2}
-	Programing Languages \newline
-	Tools
-\end{multicols}
+\begin{minipage}{0.5\linewidth}
+\begin{itemize}
+\item Embedded Systems
+\item Microelectronics
+\item Telecommunications\newline
+\end{itemize}
+\end{minipage}\hfil
+\begin{minipage}{0.5\linewidth}
+\end{minipage}
 
-\begin{multicols}{4}
-	\noindent
-	Java \newline
-	C \newline
-	C++ \newline
-	C\# \newline
-	Pyton \newline
-	Javascript \newline
-	\faCircle\faCircle\faCircle\faCircle\faCircle \newline
-	\faCircle\faCircle\faCircle\faCircle\faCircle \newline
-	\faCircle\faCircle\faCircle\faCircle\faCircle \newline
-	\faCircle\faCircle\faCircle\faCircle\faCircle \newline
-	\faCircle\faCircle\faCircle\faCircle\faCircle \newline
-	\faCircle\faCircle\faCircle\faCircle\faCircle \newline
-	Java \newline
-	C \newline
-	C++ \newline
-	C\# \newline
-	Pyton \newline
-	Javascript \newline
-	\faCircle\faCircle\faCircle\faCircle\faCircle \newline
-	\faCircle\faCircle\faCircle\faCircle\faCircle \newline
-	\faCircle\faCircle\faCircle\faCircle\faCircle \newline
-	\faCircle\faCircle\faCircle\faCircle\faCircle \newline
-	\faCircle\faCircle\faCircle\faCircle\faCircle \newline
-	\faCircle\faCircle\faCircle\faCircle\faCircle
-\end{multicols}
+\begin{minipage}{0.8\linewidth}
+	\boldText{Bachelor's degree in Electrical and Computer Engineering} \newline
+	\normalText{\itshape{Faculty of Sciences and Technology, Nova University of Lisbon}}
+\end{minipage}\hfil
+\begin{minipage}{0.2\linewidth}
+	\begin{flushright}
+	\dateText{9/2007 - 6/2015}
+	\dateTextt{\itshape{Lisbon, Portugal}}
+	\end{flushright}
+\end{minipage}
 
-\newpage
+\begin{minipage}{0.5\linewidth}
+\begin{itemize}
+\item Control Systems
+\item Digital Systems
+\item Electrical Machines
+\end{itemize}
+\end{minipage}\hfil
+\begin{minipage}{0.5\linewidth}
+\begin{itemize}
+\item Electronics
+\item Robotics/Automation
+\item Telecommunications
+\end{itemize}
+\end{minipage}
 
-\cvsection{list-ul}{Projects}
+\vspace{4mm}
+\cvsection{code}{Skills}
 
-\lipsum[5]
+\begin{minipage}{0.25\linewidth}
+	\begin{center}
+	\boldText{Programing Languages}
+	\end{center}
+\end{minipage}\hfil
+\begin{minipage}{0.25\linewidth}
+	\begin{center}
+	\boldText{Tools}
+	\end{center}
+\end{minipage}
+
+\begin{minipage}{0.25\linewidth}
+\begin{center}Java\end{center}\begin{center}C\end{center}\begin{center}C\#\end{center}\begin{center}C++\end{center}\begin{center}Python\end{center}\begin{center}Javascript\end{center}
+\end{minipage}\hfil
+\begin{minipage}{0.25\linewidth}
+	\begin{center}
+	\begin{center}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\end{center}\begin{center}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\end{center}\begin{center}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\end{center}\begin{center}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircleO\end{center}\begin{center}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircleO\hspace{2pt}\faCircleO\end{center}\begin{center}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircleO\hspace{2pt}\faCircleO\end{center}
+	\end{center}
+\end{minipage}\hfil
+\begin{minipage}{0.25\linewidth}
+	\begin{center}Linux\end{center}\begin{center}Matlab\end{center}\begin{center}MS Office\end{center}\begin{center}Oracle DB\end{center}\begin{center}Windows\end{center}\begin{center}Git Hub\end{center}
+\end{minipage}\hfil
+\begin{minipage}{0.25\linewidth}
+	\begin{center}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\end{center}\begin{center}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\end{center}\begin{center}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\end{center}\begin{center}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\end{center}\begin{center}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\end{center}\begin{center}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\end{center}
+\end{minipage}\newpage
+
+\cvsection{list}{Academic Projects}
+
+ \faAngleDoubleRight \space\boldText{Java}\newline
+\begin{minipage}{0.88\linewidth}
+	Digital Systems – Traffic Signs Detection System in Real World Conditions (C\#, OpenCV).
+\end{minipage}\hfil\vlinee
+\begin{minipage}{0.10\linewidth}
+	\begin{flushright}
+	6 months
+	\end{flushright}
+\end{minipage}
+
+C Sets,Dictionaries,Lists, Threads 
+C++
+Java Multithreading, TCP UDP, JavaSwing, JDBC
+C\# 
+Matlab 
+Assembly
+Ladder
+VHDL FPGA Arduinos
+
+
 
 \end{document}
+
