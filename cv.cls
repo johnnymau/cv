@@ -25,16 +25,19 @@
 \definecolor{mail}{HTML}{000000}
 
 %header section
-\newcommand*{\header}[1]{{\sourcesanspro\fontsize{20pt}{1em}\bfseries\color{h1} #1}}
-\newcommand*{\headerIcon}[1]{{\fontsize{20pt}{1em}\color{h1} #1}}
+\newcommand*{\header}[1]{{\sourcesanspro\fontsize{18pt}{1em}\bfseries\color{h1} #1}}
+\newcommand*{\headerIcon}[1]{{\fontsize{18pt}{1em}\color{h1} #1}}
+\newcommand*{\myname}[1]{{\sourcesanspro\fontsize{45pt}{1em}\mdseries\color{h1} #1}}
 
 %aboutme section
 \newcommand*{\user}[0]{{\sourcesanspro\fontsize{12pt}{1em}\color{user}\faUser\newline}}
 \newcommand*{\location}[0]{{\sourcesanspro\fontsize{12pt}{1em}\color{location}\faMapMarker}\newline}
-\newcommand*{\mobile}[0]{{\sourcesanspro\fontsize{12pt}{1em}\color{mobile}\hspace{1pt}\faMobile}\newline}
-\newcommand*{\mail}[0]{{\sourcesanspro\fontsize{12pt}{1em}\color{mail}\faEnvelopeO}\newline}
-\newcommand*{\linkedin}[0]{{\sourcesanspro\fontsize{12pt}{1em}\color{linkedin}\faLinkedinSquare}\newline}
-\newcommand*{\skype}[0]{{\sourcesanspro\fontsize{12}{1em}\color{skype}\faSkype\hspace{5pt}}}
+\newcommand*{\mobile}[0]{{\sourcesanspro\fontsize{12pt}{1em}\color{mobile}\faPhone}} %\hspace{1pt}
+\newcommand*{\mail}[0]{{\sourcesanspro\fontsize{12pt}{1em}\color{mail}\faEnvelopeO}}
+\newcommand*{\linkedin}[0]{{\sourcesanspro\fontsize{12pt}{1em}\color{linkedin}\faLinkedinSquare}}
+\newcommand*{\skype}[0]{{\sourcesanspro\fontsize{12}{1em}\color{skype}\faSkype}} %\hspace{5pt}
+
+%text
 \newcommand*{\normalText}[1]{{\sourcesanspro\fontsize{12pt}{1em}\mdseries\color{black}#1}}
 \newcommand*{\boldText}[1]{{\sourcesanspro\fontsize{12pt}{1em}\bfseries\color{black}#1}}
 \newcommand*{\dateText}[1]{{\sourcesanspro\fontsize{12pt}{1em}\bfseries\color{hline}#1}}
@@ -55,7 +58,7 @@
 
 \newcommand{\hlinethin}[0]{
   {
-    \color{hline}\noindent\rule{\textwidth}{1pt}
+    \color{hline}\rule{\textwidth}{1pt}
   }
 }
 
@@ -66,11 +69,9 @@
 }
 \newcommand{\photo}[1]{
   {
-    \begin{flushright}
     \begin{tikzpicture}
         \node[circle,draw,inner sep=#1,fill overzoom image=photo] (A) {};
     \end{tikzpicture}
-    \end{flushright}
   }
 }
 

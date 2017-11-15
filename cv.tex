@@ -8,50 +8,44 @@
 \usepackage{tikz}
 \usepackage[english]{babel}
 \usepackage[skins]{tcolorbox}
-
-\geometry{left=1.5cm, top=1.5cm, right=1.5cm, bottom=1.5cm}
+%João Pedro Ribeiro e Sousa de Fragoso \newline
+%\href{https://www.google.com/maps/place/Lumiar,+Lisbon,+Portugal}{Lumiar, Lisbon, Portugal} \newline
+		
+\geometry{left=1cm, top=0.75cm, right=1cm, bottom=1cm}
 \pagenumbering{gobble}
 
 \begin{document}
 
-\cvsection{}{\hspace{35mm}João Fragoso - Electrical Engineer}
-
-\begin{minipage}{0.35\linewidth}
-	\photo{1.5cm}
+\begin{center}
+\begin{minipage}{0.09\linewidth}
+	\photo{0.9cm}
 \end{minipage}\hfil
-\begin{minipage}{0.55\linewidth}
-	\begin{minipage}{0.1\linewidth}
-		\begin{center}
-			\user
-			\location
-			\mobile
-			\mail
-			\linkedin
-			\skype
-		\end{center}
-	\end{minipage}\hfil
-	\begin{minipage}{0.9\linewidth}
-		João Pedro Ribeiro e Sousa de Fragoso \newline
-		\href{https://www.google.com/maps/place/Lumiar,+Lisbon,+Portugal}{Lumiar, Lisbon, Portugal} \newline
-		\href{callto:+351924429083}{(+351) \space 924429083} \newline
-		\href{mailto:joaoprsfragoso@gmail.com}{joaoprsfragoso@gmail.com} \newline
-		\href{https://www.linkedin.com/in/joaoprsfragoso/}{joaoprsfragoso} \newline
-		\href{skype://joaoprsfragoso}{joaoprsfragoso}
-	\end{minipage}
+\begin{minipage}{0.46\linewidth}
+	\myname{\hspace{-5.5mm}João Fragoso}
 \end{minipage}
+\end{center}
+\vspace{-4mm}
+\begin{center}
+\begin{minipage}{0.35\linewidth}
+	\mobile \space\space \href{callto:+351924429083}{(+351) \space 924429083} \newline
+	\mail \space \href{mailto:joaoprsfragoso@gmail.com}{joaoprsfragoso@gmail.com}
+\end{minipage}\hfil
+\begin{minipage}{0.2\linewidth}
+	\linkedin \space\space \href{https://www.linkedin.com/in/joaoprsfragoso/}{joaoprsfragoso} \newline
+	\skype \space\space \href{skype://joaoprsfragoso}{joaoprsfragoso}
+\end{minipage}
+\end{center}
 \vfill
 \cvsection{child}{About Me}%child info male meho smileo user usersecrete
 \aboutme
 {
-	Master finalist in Electrical Engineering, with a wide technological background in Embedded Systems and Telecommunications. I am currently looking for new challenges in my professional field and I believe I can be a great addition to your team.
+	Master's degree in Electrical Engineering, with a wide technological background in Embedded Systems and Telecommunications. I am currently looking for a new challenge in my professional field and I believe I can be a great addition to your team.
 
-	I consider myself to be a highly motivated professional with good problem solving skills and objective-oriented. I face any task to me entrusted in a serious and rigorous way.
+	I consider myself a highly motivated professional with good problem-solving skills and objective-oriented. I face any task entrusted to me seriously and rigorously.
 
-	I am passionate about programming and Linux in general. Solid programming skills in C, C\#, Java, and eager to further improve my skills in C++ , Javascript, SQL, and Python. 
-
-	In my spare time, I like to learn other tools and programming languages. I'm currently diving into the containers / docker world.
+	Solid programming skills in C/C++, C\#, Java, and eager to improve my skills in Javascript and Python. Intermediate Linux user (Debian, CentOS) with basic knowledge of system administration and development tools.
 }
-\vspace{4mm}
+\vspace{3mm}
 \cvsection{graduation-cap}{Education}
 
 \begin{minipage}{0.8\linewidth}
@@ -63,16 +57,21 @@
 	\dateText{9/2015 - Present}
 	\dateTextt{\itshape{Lisbon, Portugal}}
 	\end{flushright}
-\end{minipage}
+\end{minipage}\\
 
-\begin{minipage}{0.5\linewidth}
+\begin{minipage}{\linewidth}
 \begin{itemize}
 \item Embedded Systems
+\subitem C/C++ (Arduino,Microchip PIC, RTOS, Data Structures, Multi-threading, I2C)
+\subitem C\# (WinForms, OpenCV)
+\subitem VHDL (Xilinx, FPGA)\newline\vspace{-2mm}
 \item Microelectronics
-\item Telecommunications\newline
+\subitem Cadence Virtuoso (LNA, Mixer, LO, OTA)
+\subitem Python (ScyPy, NumPy, Matplotlib)\newline\vspace{-2mm}
+\item Telecommunications
+\subitem Java (Swing, JDBC, IMS, SIP, TCP, UDP, Floodlight SDN)
+\subitem Javascript (Node.js, Express, Socket.io, Mongoose, jQuery, Pug)\newline
 \end{itemize}
-\end{minipage}\hfil
-\begin{minipage}{0.5\linewidth}
 \end{minipage}
 
 \begin{minipage}{0.8\linewidth}
@@ -84,7 +83,7 @@
 	\dateText{9/2007 - 6/2015}
 	\dateTextt{\itshape{Lisbon, Portugal}}
 	\end{flushright}
-\end{minipage}
+\end{minipage}\\
 
 \begin{minipage}{0.5\linewidth}
 \begin{itemize}
@@ -104,54 +103,35 @@
 \vspace{4mm}
 \cvsection{code}{Skills}
 
-\begin{minipage}{0.25\linewidth}
+\begin{center}
+\hspace{-36mm}
+\begin{minipage}{0.257\linewidth}
 	\begin{center}
-	\boldText{Programing Languages}
+	\boldText{Programming Languages}
 	\end{center}
 \end{minipage}\hfil
-\begin{minipage}{0.25\linewidth}
+\begin{minipage}{0.257\linewidth}
 	\begin{center}
-	\boldText{Tools}
+	\hspace{-13mm}\boldText{Tools}
 	\end{center}
 \end{minipage}
+\end{center}
 
-\begin{minipage}{0.25\linewidth}
-\begin{center}Java\end{center}\begin{center}C\end{center}\begin{center}C\#\end{center}\begin{center}C++\end{center}\begin{center}Python\end{center}\begin{center}Javascript\end{center}
+\begin{center}
+\begin{minipage}{0.15\linewidth}
+\begin{center}C\end{center}\begin{center}C++\end{center}\begin{center}Java\end{center}\begin{center}C\#\end{center}\begin{center}Python\end{center}\begin{center}Javascript\end{center}
 \end{minipage}\hfil
-\begin{minipage}{0.25\linewidth}
+\begin{minipage}{0.15\linewidth}
 	\begin{center}
-	\begin{center}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\end{center}\begin{center}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\end{center}\begin{center}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\end{center}\begin{center}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircleO\end{center}\begin{center}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircleO\hspace{2pt}\faCircleO\end{center}\begin{center}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircleO\hspace{2pt}\faCircleO\end{center}
+	\begin{center}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\end{center}\begin{center}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircleO\end{center}\begin{center}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\end{center}\begin{center}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircleO\end{center}\begin{center}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircleO\hspace{2pt}\faCircleO\end{center}\begin{center}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircleO\hspace{2pt}\faCircleO\end{center}
 	\end{center}
 \end{minipage}\hfil
-\begin{minipage}{0.25\linewidth}
-	\begin{center}Linux\end{center}\begin{center}Matlab\end{center}\begin{center}MS Office\end{center}\begin{center}Oracle DB\end{center}\begin{center}Windows\end{center}\begin{center}Git Hub\end{center}
+\begin{minipage}{0.15\linewidth}
+	\begin{center}Cadence\end{center}\begin{center}IntelliJ IDEA\end{center}\begin{center}Linux\end{center}\begin{center}Matlab\end{center}\begin{center}Oracle DB\end{center}\begin{center}Xilinx\end{center}
 \end{minipage}\hfil
-\begin{minipage}{0.25\linewidth}
-	\begin{center}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\end{center}\begin{center}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\end{center}\begin{center}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\end{center}\begin{center}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\end{center}\begin{center}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\end{center}\begin{center}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\end{center}
-\end{minipage}\newpage
-
-\cvsection{list}{Academic Projects}
-
- \faAngleDoubleRight \space\boldText{Java}\newline
-\begin{minipage}{0.88\linewidth}
-	Digital Systems – Traffic Signs Detection System in Real World Conditions (C\#, OpenCV).
-\end{minipage}\hfil\vlinee
-\begin{minipage}{0.10\linewidth}
-	\begin{flushright}
-	6 months
-	\end{flushright}
+\begin{minipage}{0.15\linewidth}
+	\begin{center}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircleO\end{center}\begin{center}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\end{center}\begin{center}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircleO\end{center}\begin{center}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircleO\end{center}\begin{center}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircleO\end{center}\begin{center}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\hspace{2pt}\faCircle\end{center}
 \end{minipage}
-
-C Sets,Dictionaries,Lists, Threads 
-C++
-Java Multithreading, TCP UDP, JavaSwing, JDBC
-C\# 
-Matlab 
-Assembly
-Ladder
-VHDL FPGA Arduinos
-
-
-
+\end{center}
 \end{document}
 
